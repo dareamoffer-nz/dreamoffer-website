@@ -1,1 +1,84 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif;color:#173d38;background:#fff;line-height:1.7}.container{width:min(1180px,90%);margin:auto}.header{height:78px;background:rgba(255,255,255,.96);border-bottom:1px solid #e9eeeb;position:sticky;top:0;z-index:10}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:#17463f}.logo-main{font-size:23px;font-weight:700;letter-spacing:.4px}.logo-cn{font-size:14px;color:#55736d}.nav nav{display:flex;gap:30px}.nav nav a{color:#355851;text-decoration:none;font-size:14px}.nav nav a:hover{color:#0d7566}.hero{min-height:650px;position:relative;overflow:hidden;background:linear-gradient(120deg,#f4f7f3 0%,#fff 55%,#e8f0ed 100%)}.hero-bg{position:absolute;inset:0;background:radial-gradient(circle at 78% 28%,rgba(80,140,126,.18),transparent 31%),radial-gradient(circle at 90% 78%,rgba(57,111,141,.12),transparent 28%)}.hero-content{position:relative;padding:125px 0 120px}.eyebrow{font-size:12px;letter-spacing:2.5px;color:#63847c;font-weight:700;margin-bottom:16px}.hero h1{font-size:58px;line-height:1.18;margin:0 0 25px;font-weight:650;letter-spacing:-1px}.hero h1 span{color:#27776b}.hero p{font-size:19px;color:#5b706b;margin:0 0 34px}.btn{display:inline-block;background:#1f6f64;color:white;padding:13px 28px;border-radius:3px;text-decoration:none;font-size:15px}.section{padding:100px 0}.section.light{background:#f5f7f4}.section-title{text-align:center;max-width:700px;margin:0 auto 55px}.section-title span{font-size:11px;letter-spacing:2.5px;color:#7a968f;font-weight:700}.section-title h2{font-size:38px;margin:8px 0 12px}.section-title p{color:#6a7b76;margin:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{padding:30px;background:#fff;border:1px solid #e6ece8;min-height:245px;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(29,72,63,.08)}.icon{font-size:12px;color:#7e9a92;letter-spacing:2px;margin-bottom:28px}.card h3{font-size:20px;margin:0 0 10px}.card p{font-size:14px;color:#687a75;margin:0}.about{padding:110px 0;background:#eaf0ed}.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:100px}.about h2,.feature-copy h2,.contact h2{font-size:42px;line-height:1.3;margin:0}.lead{font-size:21px;color:#28574f}.about p{color:#60736e}.values{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}.values div{border-top:1px solid #c9d7d1;padding-top:12px}.values strong{display:block;color:#1d554c}.values span{font-size:13px;color:#71837e}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.feature-copy p{max-width:520px;color:#687a75;margin:25px 0}.text-link{color:#1e6c62;text-decoration:none;font-weight:600}.feature-box{min-height:340px;background:linear-gradient(135deg,#dfeae5,#f8faf8);padding:55px;display:flex;flex-direction:column;justify-content:flex-end}.nz-shape{font-size:90px;font-weight:800;color:#1f7568;opacity:.18;margin-bottom:auto}.feature-box h3{font-size:22px;margin:0 0 8px}.feature-box p{color:#687a75}.homestay{padding:100px 0;background:#fff}.contact{padding:100px 0;background:#173f39;color:#fff}.contact .eyebrow{color:#a5c7bf}.contact h2{margin-bottom:18px}.contact p{color:#c5d6d1}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}.contact-card{background:rgba(255,255,255,.07);padding:35px}.contact-card div{padding:15px 0;border-bottom:1px solid rgba(255,255,255,.15)}.contact-card span{display:block;color:#9dbbb5;font-size:12px;margin-bottom:4px}.contact-card strong{font-weight:500}.contact-card .note{font-size:12px;margin:22px 0 0;color:#9dbbb5}.footer{height:85px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#71827d}footer{background:#fff}@media(max-width:800px){.header{height:auto}.nav{padding:15px 0;display:block}.nav nav{margin-top:12px;gap:16px;flex-wrap:wrap}.hero-content{padding:90px 0}.hero h1{font-size:42px}.cards,.about-grid,.feature-grid,.contact-grid{grid-template-columns:1fr}.cards{gap:14px}.about-grid,.feature-grid,.contact-grid{gap:45px}.section,.about,.homestay,.contact{padding:70px 0}.values{grid-template-columns:1fr}.footer{height:auto;padding:25px 0;display:block}.footer div+div{margin-top:8px}}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#123B5D;--navy2:#0B2D48;--ink:#1D2C38;--muted:#65727C;--line:#DDE4E8;--light:#F5F7F8;--white:#fff}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.75}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,calc(100% - 48px));margin:auto}
+.site-header{height:78px;background:rgba(255,255,255,.96);border-bottom:1px solid #eef1f3;position:sticky;top:0;z-index:20}
+.nav-wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:baseline;gap:12px;white-space:nowrap}
+.brand-en{font-size:25px;font-weight:750;letter-spacing:-.5px;color:var(--navy)}
+.brand-cn{font-size:14px;color:#68757F;letter-spacing:1px}
+.nav{display:flex;gap:30px;color:#3E4B55;font-size:14px}
+.nav a{padding:28px 0;position:relative}
+.nav a:hover{color:var(--navy)}
+.nav a:hover:after{content:"";position:absolute;left:0;right:0;bottom:17px;height:2px;background:var(--navy)}
+.hero{min-height:650px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(110deg,#f8fafb 0%,#fff 58%,#eef3f6 100%)}
+.hero-bg{position:absolute;right:-8%;top:-20%;width:58%;height:130%;background:radial-gradient(circle at 35% 45%,rgba(18,59,93,.13),transparent 42%),linear-gradient(145deg,transparent 20%,rgba(18,59,93,.06) 20%,rgba(18,59,93,.06) 21%,transparent 21%);transform:skewX(-10deg)}
+.hero-content{position:relative;padding:88px 0}
+.eyebrow{font-size:12px;letter-spacing:3px;color:#B9C8D2;font-weight:700;margin-bottom:18px}
+.eyebrow.dark{color:var(--navy);opacity:.82}
+.hero h1{font-size:clamp(46px,6vw,76px);line-height:1.16;letter-spacing:-2px;color:var(--navy2);font-weight:750;max-width:760px}
+.hero-text{font-size:22px;color:#405664;margin-top:28px}
+.hero-sub{font-size:15px;color:var(--muted);margin-top:8px;max-width:610px}
+.button{display:inline-flex;align-items:center;gap:18px;padding:14px 24px;margin-top:32px;font-size:14px;font-weight:700}
+.button-primary{background:var(--navy);color:#fff}
+.button-primary:hover{background:var(--navy2)}
+.trust-strip{background:var(--navy);color:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-grid>div{padding:24px 20px;border-right:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column}
+.trust-grid>div:last-child{border-right:0}
+.trust-grid strong{font-size:17px}.trust-grid span{font-size:12px;opacity:.7;margin-top:2px}
+.section{padding:105px 0}
+.section-light{background:var(--light)}
+.section-heading{max-width:700px;margin-bottom:50px}
+.section-heading h2,.about-grid h2,.homestay-grid h2{font-size:44px;line-height:1.25;color:var(--navy2);letter-spacing:-1px}
+.section-heading p{color:var(--muted);margin-top:14px}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.service-card{min-height:315px;border:1px solid var(--line);padding:30px;background:#fff;transition:.25s}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 14px 35px rgba(20,48,70,.08);border-color:#c6d4dd}
+.number{font-size:13px;letter-spacing:2px;color:#9AAAB5}
+.service-card h3{font-size:23px;color:var(--navy);margin-top:42px}
+.service-card p{font-size:14px;color:var(--muted);margin-top:13px}
+.service-card a,.text-link{display:inline-block;margin-top:24px;color:var(--navy);font-size:13px;font-weight:700}
+.about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:100px}
+.about-copy .lead,.homestay-grid .lead{font-size:20px;color:#334E5E;line-height:1.75}
+.about-copy>p:not(.lead){color:var(--muted);margin-top:20px}
+.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin-top:28px}
+.feature-list div{font-size:14px;display:flex;gap:10px;align-items:center}
+.feature-list span{color:var(--navy);font-weight:800}
+.short-section{background:#fff}
+.split-card{display:grid;grid-template-columns:1.2fr .8fr;min-height:420px}
+.split-text{padding:70px 70px 70px 0}
+.split-text h2{font-size:45px;line-height:1.25;color:var(--navy2)}
+.split-text p{color:var(--muted);max-width:570px;margin-top:22px}
+.split-panel{background:var(--navy);color:#fff;padding:70px;display:flex;flex-direction:column;justify-content:center}
+.quote-mark{font-family:Georgia,serif;font-size:80px;line-height:.7;opacity:.35}
+.split-panel p{font-size:25px;line-height:1.6;margin-top:18px}
+.homestay-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px}
+.homestay-grid p:not(.lead){color:var(--muted);margin-top:20px}
+.contact{background:var(--navy2);color:#fff;padding:100px 0}
+.contact-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:100px;align-items:center}
+.contact h2{font-size:47px;line-height:1.3;letter-spacing:-1px}
+.contact p{color:#B7C6D0;margin-top:18px}
+.contact-box{border:1px solid rgba(255,255,255,.2);padding:28px}
+.contact-item{display:flex;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.13);font-size:14px}
+.contact-item span{color:#9FB1BD}.contact-item strong{font-weight:600;text-align:right}
+.contact-note{font-size:12px;color:#8499A7;margin-top:20px}
+footer{background:#09263D;color:#A8B9C5;font-size:12px;padding:22px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px}
+footer strong{color:#fff}
+@media(max-width:900px){
+  .nav{gap:13px;font-size:12px}.brand-cn{display:none}
+  .service-grid{grid-template-columns:1fr 1fr}.about-grid,.homestay-grid,.contact-inner{grid-template-columns:1fr;gap:45px}
+  .split-card{grid-template-columns:1fr}.split-text{padding:20px 0 50px}.split-panel{min-height:300px}
+}
+@media(max-width:620px){
+  .container{width:min(100% - 30px,1180px)}
+  .site-header{height:auto}.nav-wrap{padding:15px 0;align-items:flex-start;flex-direction:column;gap:10px}
+  .nav{width:100%;overflow:auto;gap:22px}.nav a{padding:2px 0;white-space:nowrap}.nav a:hover:after{display:none}
+  .hero{min-height:590px}.hero-content{padding:70px 0}.hero h1{font-size:44px;letter-spacing:-1px}.hero-text{font-size:18px}
+  .trust-grid{grid-template-columns:1fr 1fr}.trust-grid>div{border-bottom:1px solid rgba(255,255,255,.14)}
+  .section{padding:75px 0}.section-heading h2,.about-grid h2,.homestay-grid h2,.split-text h2{font-size:36px}
+  .service-grid{grid-template-columns:1fr}.service-card{min-height:auto}.contact{padding:75px 0}.contact h2{font-size:38px}.footer-inner{flex-direction:column}
+}
